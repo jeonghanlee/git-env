@@ -1,5 +1,7 @@
 # Configuration Environment for git
 
+![Linter Run](https://github.com/jeonghanlee/git-env/workflows/Linter%20Run/badge.svg)
+
 ## Check the version one would like to use
 
 Update the `configure/RELEASE` file by using `RELEASE.local`
