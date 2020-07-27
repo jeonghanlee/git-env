@@ -46,3 +46,8 @@ auto_positions.sav*
 \#*
 .versions
 *-src
+config.log
+config.status
+config.mak.autogen
+conftest*
+confdefs.h

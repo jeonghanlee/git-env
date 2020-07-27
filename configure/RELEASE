@@ -1,18 +1,18 @@
 
-APPNAME:=env-template
+APPNAME:=git
 
 ## Where the Source repository SRC_URL/SRC_NAME
 ##
-SRC_URL:=https://github.com/jeonghanlee
+SRC_URL:=https://github.com/git
 SRC_NAME:=${APPNAME}
 
 
 ## Which the source tag / branch / hash id would like to use
 ## 2020-04-21
-SRC_TAG:=master
+SRC_TAG:=tags/v2.28.0
 
 ## Placeholder for the site-specific version control 
-SRC_VERSION:=master
+#SRC_VERSION:=2.28.0
 
 
 -include $(TOP)/../RELEASE.local
