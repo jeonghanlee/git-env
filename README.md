@@ -58,14 +58,14 @@ make build
 make install
 ```
 
-* Install all include documentatation.
+## Execute
+
+* Add PATH and LD_LIBRARY_PATH
 
 ```bash
-make build.all
-make install.all
+export PATH=~/git/bin:$PATH
+export LD_LIBRARY_PATH=~/git/libexec
 ```
-
-## Execute
 
 ```bash
 jhlee@parity: git-env (master)$ tree -L 2 ~/git

@@ -51,3 +51,4 @@ config.status
 config.mak.autogen
 conftest*
 confdefs.h
+git-src

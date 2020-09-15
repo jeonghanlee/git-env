@@ -51,12 +51,9 @@ endif
 
 .PHONY: build conf
 
-build.all:
-	$(QUIET) make -C $(SRC_PATH) -j$(PARALLEL) all doc
-
 ## Build Source
 build:
-	$(QUIET) make -C $(SRC_PATH) -j$(PARALLEL)
+	$(QUIET) make -C $(SRC_PATH) -j$(PARALLEL) all 
 
 .PHONY: configure clean
 ## Copy the site specific files into sources
