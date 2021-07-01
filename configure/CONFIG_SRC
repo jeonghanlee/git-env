@@ -34,6 +34,16 @@ INIT_SRC = 1
 endif
 #
 #
+
+ifeq ($(UNAME_S),Darwin)
+OS_VERSION:=$(strip $(shell sw_vers -productVersion))
+OS_NAME:=$(strip $(shell sw_vers -productName))
+endif
+ifeq ($(UNAME_S),Linux)
+OS_VERSION:=$(strip $(shell grep -Po '^VERSION_ID=\K[^d].+' /etc/os-release | sed 's/\"//g'))
+OS_NAME:=$(strip $(shell grep -Po '^ID=\K[^S].+' /etc/os-release | sed 's/\"//g'))
+endif
+
 SITE_TEMPLATE_PATH:=$(TOP)/site-template
 #
 #

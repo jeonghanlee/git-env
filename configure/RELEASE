@@ -9,7 +9,7 @@ SRC_NAME:=${APPNAME}
 
 ## Which the source tag / branch / hash id would like to use
 ## 2020-04-21
-SRC_TAG:=tags/v2.28.0
+SRC_TAG:=tags/v2.32.0
 
 ## Placeholder for the site-specific version control 
 #SRC_VERSION:=2.28.0

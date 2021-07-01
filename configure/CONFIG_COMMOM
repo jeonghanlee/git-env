@@ -1,5 +1,5 @@
 
-GIT_EDITOR:=emacs
+GIT_EDITOR:=vi
 POSIX_THREADS:=-lpthread
 PARALLEL?=2
 

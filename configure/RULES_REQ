@@ -1,5 +1,12 @@
 
 .PHONY: install.pkgs
 
+ifeq ($(UNAME_S),debian)
 install.pkgs:
 	$(QUIET)sudo apt install libpcre2-dev asciidoc
+endif
+
+ifeq ($(UNAME_S),centos)
+install.pkgs:
+	$(QUIET)sudo yum install -y pcre2-devel asciidoc expat-devel
+endif
